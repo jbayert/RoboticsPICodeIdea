@@ -4,11 +4,23 @@ def foo():
     print("foo:",a)
 def goo():
     print("goo:", a)#access a as a global variable
+
+def loo():
+    global a
+    print("loo:",a)
+    a+=1
+    print("loo2:", a)
+
 def boo():
     print("boo:",a)#error cause it thinks a is a local variable
     a +=1
 
 foo()#print new value 6
-goo()#can access a global variable but it is still 5
+goo()#can access a global variable but it is stil 5
+
+#This might work but seems more confusing than classes 
+loo()
+print("Main:",a , "\n")
+
 boo()
 
