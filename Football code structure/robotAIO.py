@@ -17,7 +17,7 @@ from time import sleep
 
 class main(Robot):
     def setup(self):
-        #set up variables needed
+        #set up variables needed change these next few lines to update settings.
         self.motor_type = "Bags"#set the motor type
         self.a = 1
 
@@ -43,4 +43,4 @@ class main(Robot):
         #slow down loop
         sleep(2)
 
-main().run()
+main().run()#loops the code with some magic
