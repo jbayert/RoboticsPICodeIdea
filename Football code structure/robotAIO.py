@@ -1,5 +1,5 @@
 #First import defualt parameters
-from ValpoRobot import *
+from BackgroundCode.ValpoRobot import *
 
 #Pick a drive train by uncommenting it
 from DriveTrains.basic_drive_train import drive
@@ -18,7 +18,7 @@ from time import sleep
 class main(Robot):
     def setup(self):
         #set up variables needed change these next few lines to update settings.
-        self.motor_type = "Bags"#set the motor type
+        self.motor_type = "Bag"#set the motor type
         self.a = 1
 
         #run setups from components
